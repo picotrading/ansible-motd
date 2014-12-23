@@ -7,7 +7,11 @@ galaxy_info:
   min_ansible_version: 1.7
   platforms:
     - name: Debian
-    - name: Redhat
+      versions:
+        - all
+    - name: EL
+      versions:
+        - all
   categories:
     - system
 dependencies: []

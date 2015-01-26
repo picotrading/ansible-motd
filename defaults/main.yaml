@@ -7,6 +7,6 @@ motd_ascii_art: "     _              _ _     _\n    / \\   _ __  ___(_) |__ | | 
 motd_info:
   - " FQDN:    ": "{{ ansible_fqdn }}"
   - " Distro:  ": "{{ ansible_distribution }} {{ ansible_distribution_version }} {{ ansible_distribution_release }}"
-  - " Virtual: ": "{% if ansible_virtualization_role == 'guest' %}YES{% else %}NO{% endif %}\n"
+  - " Virtual: ": "{{ 'YES' if ansible_virtualization_role == 'guest' else 'NO' }}\n"
   - " CPUs:    ": "{{ ansible_processor_vcpus }}"
   - " RAM:     ": "{{ (ansible_memtotal_mb / 1000) | round(1) }}GB"

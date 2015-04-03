@@ -1,5 +1,10 @@
 ---
 
+- name: Reload facts
+  setup:
+  tags:
+    - motd_config
+
 - name: Pico MOTD
   template:
     src: motd.j2

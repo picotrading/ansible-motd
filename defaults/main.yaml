@@ -1,7 +1,12 @@
 ---
 
 # Default ASCII art shown at the beginning of the motd
-motd_ascii_art: "     _              _ _     _\n    / \\   _ __  ___(_) |__ | | ___\n   / _ \\ | '_ \\/ __| | '_ \\| |/ _ \\\n  / ___ \\| | | \\__ \\ | |_) | |  __/\n /_/   \\_\\_| |_|___/_|_.__/|_|\\___|\n"
+motd_ascii_art: |
+      _              _ _     _
+     / \\   _ __  ___(_) |__ | | ___
+    / _ \\ | '_ \\/ __| | '_ \\| |/ _ \\
+   / ___ \\| | | \\__ \\ | |_) | |  __/
+  /_/   \\_\\_| |_|___/_|_.__/|_|\\___|
 
 # Default information to show under the ASCII art
 motd_info:
